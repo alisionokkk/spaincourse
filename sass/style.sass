@@ -1,4 +1,6 @@
-﻿.btn
+﻿.mob
+    display: none
+.btn
     width: 170px
     height: 33px
     border-radius: 12px
@@ -47,13 +49,16 @@ header
         nav
             display: flex
             justify-content: space-between
+            list-style: none
             li
-                font-family: "Bitter"
-                font-weight: 500
-                font-size: 14px
-                color: rgba(42, 46, 48, 1)
-                list-style: none
-                padding-right: 35px
+                a
+                    font-family: "Bitter"
+                    font-weight: 500
+                    font-size: 14px
+                    color: rgba(42, 46, 48, 1)
+                    list-style: none
+                    padding-right: 35px
+                    text-decoration: none
         .social_link
             a
                 padding-right: 17px
@@ -312,12 +317,14 @@ header
                     color: rgba(42, 46, 48, 1)
                     line-height: 27px
                     text-align: justify
+                    margin-left: 5%
                     span
                         font-weight: 500
         .right_part
             margin-bottom: 40px
+            margin-left: 150px
             img
-                float: right
+                float: center
                 margin-bottom: 40px
     p.p_d
         font-family: "Bitter"
@@ -675,6 +682,8 @@ header
         display: flex
         justify-content: space-around
         margin-bottom: 75px
+        img
+            height: 280px
         .part
             width: 500px
             .text
@@ -746,9 +755,298 @@ footer
             font-family: "Black Ops One"
             font-weight: 400
             text-transform: uppercase
+            text-align: center
+            color: #fff
             .s_l
                 width: 95px
                 margin: 0 auto
                 margin-top: 20px
                 .w
                     margin-right: 15px
+
+@media(max-width: 767px)
+    .mob
+        display: inline
+    .icons_wrapper
+        margin-top: 90px
+        margin-bottom: 90px
+        align-items: stretch
+        .icon_element
+            width: 170px
+            margin-bottom: 20px
+            img
+                width: 70px
+                height: 70px
+                margin-bottom: 30px
+            p
+                font-size: 14px
+    .description
+        p
+            font-size: 18px
+            margin-top: 100px
+        .description_wrapper
+            flex-wrap: wrap
+            .part
+                img
+                    width: 320px
+                    height: 320px
+                    margin-bottom: 50px
+            h2
+                font-size: 36px
+            p
+                font-size: 15px
+                width: 320px
+                line-height: 23px
+        h5
+            display: none
+    .for
+        p.p_d
+            font-size: 18px
+            margin-top: 100px
+        h2
+            font-size: 80px
+            margin-top: 50px
+            margin-bottom: 75px
+        h3
+            font-size: 24px
+        .h3_d::after
+            width: 50%
+        .elements_wrapper
+            width: 90%
+            .element
+                flex-wrap: wrap
+                justify-content: start
+                h4
+                    font-size: 15px
+                    text-transform: uppercase
+                    margin-bottom: 20px
+                p
+                    font-size: 15px
+                    line-height: 23px
+                    height: auto
+        h5
+            display: none
+    .courses
+        h3
+            margin-top: 150px
+            font-size: 24px
+            margin-bottom: 60px
+        .h3_d::after
+            width: 50%
+            margin-left: 5%
+        .img_wrapper
+            .element
+                p
+                    text-transform: none
+                    margin-bottom: 40px
+        p
+            font-size: 18px
+            margin-top: 90px
+        h5
+            display: none
+    .programs
+        .h2_g
+            margin-top: 50px
+            font-size: 80px
+            margin-bottom: 90px
+        h3
+            font-size: 36px
+            margin: 0 auto
+            margin-bottom: 55px
+        .element
+            flex-wrap: wrap
+            .desc
+                h4
+                    font-size: 15px
+                    margin-bottom: 14px
+                h5
+                    display: none
+            img
+                width: 240px
+                height: 160px
+                margin-bottom: 20px
+            p
+                font-size: 15px
+                line-height: 20px
+    .divider
+        display: none
+    .obu
+        h3
+            font-size: 36px
+            margin-top: 90px
+            margin-bottom: 60px
+        .elem
+            flex-wrap: wrap
+            img.desct
+                display: none
+            img.mob
+                width: 100%
+                display: inline-block
+                margin: 15px
+                margin-bottom: 30px
+            .part
+                width: 98%
+                margin: 0 auto
+                .text
+                    width: 100%
+                    margin-bottom: 35px
+                    h4
+                        font-size: 15px
+                        margin-right: 25px
+                    p
+                        font-size: 15px
+    .result
+        h3
+            font-size: 24px
+        .h3_d::after
+            display: none
+        .information_wrapper
+            flex-wrap: wrap
+            .part
+                .element
+                    p
+                        font-size: 15px
+                        width: 97%
+                        margin: 10px
+            .right_part
+                margin: 5px
+                img
+                    width: 160px
+                    height: 160px
+        h5
+            display: none
+        p.p_d
+            font-size: 18px
+            margin-top: 90px
+        .h2_g
+            font-size: 80px
+            margin-top: 50px
+            margin-bottom: 105px
+    .video
+        h3
+            font-size: 24px
+        .h3_d::after
+            width: 40%
+            margin-left: 4%
+        .wrapper
+            flex-wrap: wrap
+            iframe
+                width: 300px
+                height: 180px
+                margin: 0 auto
+                margin-bottom: 30px
+        p
+            width: 98%
+            margin: 0 auto
+            font-size: 15px
+        h5
+            display: none
+        p.p_d
+            font-size: 18px
+            margin-top: 90px
+    .rew
+        h3
+            font-size: 24px
+        .h3_d::after
+            width: 30%
+            margin-left: 4%
+        .element
+            flex-wrap: wrap
+            margin-bottom: 55px
+            img
+                text-align: left
+                margin-bottom: 22px
+            p
+                font-size: 15px
+                line-height: 23px
+        h5
+            display: none
+        p.p_d
+            margin-top: 90px
+            font-size: 18px
+    .ques
+        .h2_g
+            font-size: 80px
+            margin-top: 100px
+            margin-bottom: 110px
+        h3
+            font-size: 24px
+        .h3_d:after
+            width: 40%
+            margin-left: 4%
+        .wrapper
+            .element
+                width: 97%
+                margin: 0 auto
+                margin-bottom: 45px
+                h4
+                    font-size: 15px
+            p
+                font-size: 15px
+                line-height: 23px
+        p.p_d
+            font-size: 18px
+            margin-top: 90px
+        h5
+            display: none
+    .about
+        .wrapper
+            flex-wrap: wrap
+            margin-top: 100px
+            .part
+                width: 97%
+                h3
+                    font-size: 36px
+                    text-align: center
+                h4
+                    font-size: 240px
+                    line-height: 300px
+                p
+                    font-size: 15px
+                    margin-left: 10px
+                    line-height: 23px
+    .images
+        img
+            width: 160px
+            height: 160px
+            margin: 5px
+        div
+            width: 100%
+    .form
+        h3.h3_d
+            font-size: 24px
+            margin-top: 90px
+            margin-bottom: 35px
+        .h3_d::after
+            width: 45%
+            margin-left: 4%
+        .input_cont
+            input
+                width: 240px
+        .h2_g
+            font-size: 80px
+            margin-top: 60px
+            margin-bottom: 100px
+    footer
+        height: auto
+        padding: 60px 30px
+        .wrapper
+            flex-wrap: wrap
+        .social_linkss.mob
+            display: block
+            font-family: "Black Ops One"
+            font-weight: 400
+            text-transform: uppercase
+            text-align: center
+            width: 180px
+            margin: 0 auto
+            margin-top: 88px
+            color: #fff
+            .s_l
+                width: 95px
+                margin: 0 auto
+                margin-top: 20px
+                .w
+                    margin-right: 15px
+    header,.desct, .prep, .pay
+        display: none
