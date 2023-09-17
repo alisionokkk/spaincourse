@@ -12,7 +12,19 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
     <script src="js/menu.js"></script>
+<script>
+    $(document).ready(function(){
+        PopUpHide();
+    });
+    function PopUpShow(){
+        $("#popup1").show();
+    }
+    function PopUpHide(){
+        $("#popup1").hide();
+    }
+</script>
 </head>
 <body>
     <header class="header">
@@ -24,19 +36,21 @@
                 </div>
             <nav class="header__menu">
                 <ul class="header__list">
+                    <li><a class="header__link" href="#head1">О курсе</a></li>
                     <li><a class="header__link" href="#head2">Программа</a></li>
                     <li><a class="header__link" href="#head3">Обучение</a></li>
-                    <li><a class="header__link" href="#head1">О курсе</a></li>
                     <li><a class="header__link" href="#head4">Стоимость и оплата</a></li>
                     <li><a class="header__link" href="#head5">О школе</a></li>
                 </ul>
                 <div class="social_link1">
-                    <a href="#" class="r"><img src="icons/telegram.svg" alt="telegram"></a>
-                    <a href="#" class="r"><img src="icons/instagram.svg" alt="instagram"></a>
-                    <a href="#"><img src="icons/tiktok.svg" alt="tiktok"></a>
+                    <a href="https://t.me/espanolexitoso " class="r"><img src="icons/telegram.svg" alt="telegram"></a>
+                    <a href="https://www.instagram.com/espanolexitoso/
+                    " class="r"><img src="icons/instagram.svg" alt="instagram"></a>
+                    <a href="https://www.tiktok.com/@espanolexitoso "><img src="icons/tiktok.svg" alt="tiktok"></a>
                 </div>
+                <button class="btn mob"><a href="javascript:PopUpShow()">Оставить заявку</a></button>
             </nav>
-            <button class="btn"><a href="#">Оставить заявку</a></button>
+            <button class="btn descc"><a href="javascript:PopUpShow()">Оставить заявку</a></button>
             <div class="social_link">
                 <a href="#"><img src="icons/telegram.svg" alt="telegram"></a>
                 <a href="#"><img src="icons/instagram.svg" alt="instagram"></a>
@@ -90,14 +104,18 @@
                 </div>
                 <div class="part">
                     <h2>О КУРСЕ</h2>
-                    <p>Каждый из нас понимает очевидную вещь: граница обучения кадров требует определения и уточнения экономической целесообразности принимаемых решений. Приятно, граждане, наблюдать, как независимые государства набирают популярность среди определенных слоев населения, а значит, должны быть призваны к ответу!<br><br>
+                    <p>Этот курс разработан для тех, кто хочет повысить коммуникативные навыки на испанском языке, необходимые в мире деловых отношений и международных связей.
+                        Наши профессиональные преподаватели помогут научиться выражать свои идеи, вести переговоры и успешно взаимодействовать с испаноязычными партнерами и клиентами.
+                        <br><br>
     
-                    Учитывая ключевые сценарии поведения, выбранный нами инновационный путь играе.<br><br>Каждый из нас понимает очевидную вещь: граница обучения кадров требует определения и уточнения экономической целесообразности принимаемых решений. Приятно, граждане, наблюдать, как независимые государства набирают</p>
+                        Мы фокусируемся на практическом применении языка в бизнес-среде. Наш прогрессивный подход к обучению включает интерактивные уроки, ролевые игры, коммуникативные упражнения и практические задания, которые помогут вам уверенно применять новые знания и навыки в реальных ситуациях.
+                        <br><br>Развивайте свою карьеру, расширяя возможности и обогащая культурный опыт с помощью курса испанского языка для бизнеса!
+                    </p>
                 </div>
             </div>
             <h5><span>240</span> 190 BYN/ месяц</h5>
             <p>Старт по мере набора групп</p>
-            <button class="btn btn1"><a href="#">Оставить заявку</a></button>
+            <button class="btn btn1"><a href="javascript:PopUpShow()">Оставить заявку</a></button>
         </div>
     </section>
 
@@ -121,7 +139,7 @@
             </div>
             <h5><span>240</span> 190 BYN/ месяц</h5>
             <p class="p_d">Старт по мере набора групп</p>
-            <button class="btn btn1"><a href="#">Оставить заявку</a></button>
+            <button class="btn btn1"><a href="javascript:PopUpShow()">Оставить заявку</a></button>
         </div>
     </section>
     <section class="courses">
@@ -167,7 +185,7 @@
             </div>
             <h5><span>240</span> 190 BYN/ месяц</h5>
             <p class="p_d">Старт по мере набора групп</p>
-            <button class="btn btn1"><a href="#">Оставить заявку</a></button>
+            <button class="btn btn1"><a href="javascript:PopUpShow()">Оставить заявку</a></button>
         </div>
     </section>
 
@@ -183,7 +201,7 @@
                         <h5>1</h5>
                     </div>
                     <h5 class="h5_new">1</h5>
-                    <img src="img/img_10.jpg" alt="img_10">
+                    <img src="img/коммуник.jpg" alt="img_10">
                     <p>Определение целей и ожиданий. Представление бизнес-контекстов, в которых используется испанский язык. Умение задавать вопросы и отвечать на них: использование вопросительных слов, формулировка и отработка типичных вопросов в бизнес-сфере. Знакомство на собеседовании: рассказ о себе и своей биографии. Организация встреч и переговоров. Электронная переписка: email и мессенджеры. Деловой этикет: правила хорошего тона на бизнес-встречах. </p>
                 </div>
                 <div class="divider"></div>
@@ -193,7 +211,7 @@
                         <h5>2</h5>
                     </div>
                     <h5 class="h5_new">2</h5>
-                    <img src="img/img_11.jpg" alt="img_11">
+                    <img src="img/работа в компании.jpg" alt="img_11">
                     <p>Организационная структура компании: отделы, должности, обязанности. Корпоративная культура и её особенности в испанских компаниях. Корпоративы и неформальное общение с коллегами. Описание и планирование проектов, ведение документации, отчетность, сроки. Офисная жизнь. Организация тренингов и обучения. Требования к персоналу, поиск сотрудников, составление вакансии. </p>
                 </div>
                 <div class="divider"></div>
@@ -203,7 +221,7 @@
                         <h5>3</h5>
                     </div>
                     <h5 class="h5_new">3</h5>
-                    <img src="img/img_12.jpg" alt="img_12">
+                    <img src="img/маркетинг.jpg" alt="img_12">
                     <p>Умение описывать продукты и услуги: составление описаний, презентация, обсуждение преимуществ и характеристик товаров/услуг. Интернет-маркетинг и интернет-торговля. Графический и веб-дизайн. Заполнение брифа и постановка ТЗ. Социальные сети: общение, продвижение. Испаноязычные блогеры.
                         Наружная и видеореклама. Всемирно известные бренды из испаноязычных стран.</p>
                 </div>
@@ -214,7 +232,7 @@
                         <h5>4</h5>
                     </div>
                     <h5 class="h5_new">4</h5>
-                    <img src="img/img_12.jpg" alt="img_12">
+                    <img src="img/бух.jpg" alt="img_12">
                     <p>Формы собственности компаний. Открытие бизнеса и стартапы. Бухгалтерский учёт и налоги. Финансовая грамотность и банки. Органы государственного управления внутри страны. Международные отношения: ВЭД, ЕС, международные политические и экономические организации.</p>
                 </div>
                 <div class="divider"></div>
@@ -224,10 +242,13 @@
                         <h5>5</h5>
                     </div>
                     <h5 class="h5_new">5</h5>
-                    <img src="img/img_12.jpg" alt="img_12">
+                    <img src="img/культура.jpg" alt="img_12">
                     <p>Исторические и культурные особенности испаноязычного мира: Испания, Латинская Америка. Туризм и особенности испаноязычных регионов для ведения бизнеса и отдыха. Особенности испанских регионов Кастилия, Каталония, Андалусия, Страна Басков, Канарские и балеарские острова.</p>
                 </div>
             </div>
+            <h5><span>240</span> 190 BYN/ месяц</h5>
+            <p class="p_d">Старт по мере набора групп</p>
+            <button class="btn btn1"><a href="javascript:PopUpShow()">Оставить заявку</a></button>
         </div>
     </section>
     <section class="obu" id="head3">
@@ -276,6 +297,9 @@
                         </div>
                     </div>
             </div>
+            <h5><span>240</span> 190 BYN/ месяц</h5>
+            <p class="p_d">Старт по мере набора групп</p>
+            <button class="btn btn1"><a href="javascript:PopUpShow()">Оставить заявку</a></button>
         </div>
     </section>
 
@@ -339,7 +363,7 @@
             </div>
             <h5><span>240</span> 190 BYN/ месяц</h5>
             <p class="p_d">Старт по мере набора групп</p>
-            <button class="btn btn1"><a href="#">Оставить заявку</a></button>
+            <button class="btn btn1"><a href="javascript:PopUpShow()">Оставить заявку</a></button>
             <h2 class="h2_g">EE</h2>
         </div>
     </section>
@@ -355,7 +379,7 @@
 
             <h5><span>240</span> 190 BYN/ месяц</h5>
             <p class="p_d">Старт по мере набора групп</p>
-            <button class="btn btn1"><a href="#">Оставить заявку</a></button>
+            <button class="btn btn1"><a href="javascript:PopUpShow()">Оставить заявку</a></button>
         </div>
     </section>
 
@@ -384,7 +408,7 @@
                 </div>
                 <h5><span>240</span> 190 BYN/ месяц</h5>
                 <p class="p_d">Старт по мере набора групп</p>
-                <button class="btn btn1"><a href="#">Оставить заявку</a></button>
+                <button class="btn btn1"><a href="javascript:PopUpShow()">Оставить заявку</a></button>
         </div>
     </section>
     <section class="ques">
@@ -420,7 +444,7 @@
             </div>
             <h5><span>240</span> 190 BYN/ месяц</h5>
             <p class="p_d">Старт по мере набора групп</p>
-            <button class="btn btn1"><a href="#">Оставить заявку</a></button>
+            <button class="btn btn1"><a href="javascript:PopUpShow()">Оставить заявку</a></button>
         </div>
     </section>
     <section class="pay" id="head4">
@@ -442,7 +466,7 @@
             </div>
             <h5><span>240</span> 190 BYN/ месяц</h5>
             <p class="p_d">Старт по мере набора групп</p>
-            <button class="btn btn1"><a href="#">Оставить заявку</a></button>
+            <button class="btn btn1"><a href="javascript:PopUpShow()">Оставить заявку</a></button>
         </div>
     </section>
     <section class="about" id="head5">
@@ -489,8 +513,12 @@
     <footer>
         <div class="container">
             <div class="wrapper">
-                <p>Индивидуальный предприниматель<br>Новиков А. И.<br>
-                    УНП 99999988<br>Юр.адрес: <br>РБ, Минск, пер. Козлова 18-22<br>info@gmail.com
+                <p>Индивидуальный предприниматель<br>Новиков Антон Игоревич<br>УНП 193578051
+<br>220037 г. Минск, пер. Козлова 18-22
+<br>р/с BY70ALFA30132A49020010270000
+<br>в ЗАО "Альфа-Банк"<br>220013 г. Минск, ул. Сурганова 43-47<br>БИК: ALFABY2X
+<br>УНП 101541947, ОКПО 37526626.
+<br>+375 44 510 61 71<br>espanolexitoso@gmail.com
                 </p>
                 <div class="social_linkss desct">
                     Espanol eXITOSO<br>
@@ -506,12 +534,35 @@
             <div class="social_linkss mob">
                 Espanol eXITOSO<br>
                 <div class="s_l">
-                    <a href="#" class="w"><img src="icons/telegram.svg" alt=""></a>      
-                <a href="#" class="w"><img src="icons/instagram.svg" alt=""></a>      
-                <a href="#"><img src="icons/tiktok.svg" alt=""></a>
+                    <a href=" https://t.me/espanolexitoso 
+                    " class="w"><img src="icons/telegram.svg" alt=""></a>      
+                <a href="https://www.instagram.com/espanolexitoso/
+                " class="w"><img src="icons/instagram.svg" alt=""></a>      
+                <a href="https://www.tiktok.com/@espanolexitoso "><img src="icons/tiktok.svg" alt=""></a>
                 </div>
             </div>
         </div>
     </footer>
+    <div class="b-popup" id="popup1">
+        <div class="b-popup-content">
+            <a href="javascript:PopUpHide()" class="cros">x</a>
+            <h2>Получив заявку мы свяжемся с вами</h2>
+            <form action="">
+                <input type="text" placeholder="Ваше имя">
+                <input type="text" placeholder="Телефон">
+                <div class="contt">
+<select class="select">
+                        <option value="value1">Viber</option>
+                        <option value="value2" selected>Значение 2</option>
+                        <option value="value3">Значение 3</option>
+</select>
+                    <h3>Удобный мессенджер</h3>
+                </div>
+                <p>Отправляя заявку вы соглашаетесь
+                    на обработку персональных данных.</p>
+                    <button>Отправить</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
