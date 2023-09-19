@@ -317,6 +317,7 @@ header
             display: none
         img
             height: 240px
+            border: 5px solid rgba(245, 198, 67, 1)
         p
             font-family: "Bitter"
             font-weight: 300
@@ -324,7 +325,7 @@ header
             color: rgba(42, 46, 48, 1)
             width: 460px
             text-align: justify
-    h5
+    h5.h5_DD
         text-align: center
         font-family: "Bitter"
         font-weight: 600
@@ -647,12 +648,15 @@ header
                 margin-bottom: 72px
                 text-transform: uppercase
                 margin-bottom: 0
+                margin-left: 18px
             h4
                 font-family: "Black Ops One"
                 font-weight: 400
                 font-size: 380px
                 color: rgba(245, 198, 67, 1)
                 line-height: 380px
+                text-align: left
+                float: left
                 span
                     color: rgba(212, 46, 41, 1)
             p
@@ -719,13 +723,15 @@ header
         width: 200px
         height: 50px
         margin: 0 auto
-        text-align: center
-        font-family: "Bitter"
-        font-weight: 600
-        font-size: 18px
         border: none
-        color: #fff
         margin-top: 50px
+        a
+            text-align: center
+            font-family: "Bitter"
+            font-weight: 600
+            font-size: 18px
+            color: #fff
+
     button:hover
         background: rgba(244, 242, 242, 1)
         border: 1px solid rgba(245, 198, 67, 1)
@@ -827,7 +833,7 @@ header
                 font-weight: 300
                 font-size: 18px
                 color: rgba(0, 0, 0, 1)
-        
+
 footer
     background-color: rgba(88, 88, 90, 1)
     height: 399px
@@ -838,7 +844,7 @@ footer
         justify-content: space-between
         font-family: "Bitter"
         font-weight: 300
-        font-size: 16px
+        font-size: 14px
         line-height: 24px
         color: rgba(255, 255, 255, 1)
         .linkss
@@ -865,7 +871,7 @@ footer
     font-size:30px
     color: #fff
 
-.b-popup
+.b-popup, .b-popup2
     width:100%
     position: absolute
     min-height:100%
@@ -875,6 +881,8 @@ footer
     top:0px
     display: flex
     justify-content: center
+    z-index: 40
+
 .b-popup-content
     display: block
     position: fixed
@@ -884,7 +892,7 @@ footer
     padding:0px 5px 34px 27px
     background-color: rgba(255, 255, 255, 1)
     margin:0 auto
-    a
+    a.crossss
         font-family: "Bitter"
         font-weight: 900
         font-size: 16px
@@ -960,22 +968,27 @@ footer
         margin-top: 14px
         width: 130px
         height: 39px
-        background: rgba(212, 46, 41, 1)
-        font-family: "Bitter"
-        font-weight: 500
-        font-size: 14px
-        text-align: center
         border: none
         border-radius: 12px
-        color:#fff
-
-
-
+        background: rgba(212, 46, 41, 1)
+        text-align: center
+        a
+            font-family: "Bitter"
+            font-weight: 500
+            font-size: 14px
+            color:#fff
+            text-align: center
+            float: center
+            text-decoration: none
+.b-popup2 .b-popup-content
+    height: 40px
 
 
 @media(max-width: 767px)
     .mob
         display: inline
+    .img_bg
+        margin-top: 100px
     .icons_wrapper
         margin-top: 90px
         margin-bottom: 90px
@@ -1113,10 +1126,11 @@ footer
             img.desct
                 display: none
             img.mob
-                width: 100%
                 display: inline-block
                 margin: 15px
                 margin-bottom: 30px
+                width: 360px
+                height: 240px
             .part
                 width: 98%
                 margin: 0 auto
